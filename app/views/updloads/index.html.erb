@@ -1,0 +1,4 @@
+<% @upload.each do |img| %>
+<%= image_tag img.image.url, class: 'img-show %>
+<%= link_to "Eliminar Imagen", img, :method => :delete %>
+<% end %>
